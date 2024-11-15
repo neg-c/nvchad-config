@@ -35,3 +35,13 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.filetype.add {
+  extension = {
+    ixx = "cpp",
+    cppm = "cpp",
+    cxx = "cpp",
+    cxxm = "cpp",
+    mpp = "cpp",
+  },
+}
